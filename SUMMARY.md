@@ -6,6 +6,7 @@
     * [你的第一个 go 并发程序](part1/02-first-go-concurrency-program.md)
     * [等待 goroutine 结束](part1/03-waitgroup.md)
     * [goroutine 通过 channel 通信](part1/04-use-channel-to-communicate.md)
+    * [关闭 channel](part1/05-close-channel.md)
 * [Part II：实例解析](part2/README.md)
     * [go syncMap 是如何实现并发访问的](part2/01-go-syncmap.md)
 * [part III：内部原理](part3/README.md)
