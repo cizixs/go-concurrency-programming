@@ -8,6 +8,7 @@
     * [goroutine 通过 channel 通信](theory/04-use-channel-to-communicate.md)
     * [关闭 channel](theory/05-close-channel.md)
     * [带缓冲的 channel](theory/06-buffered-channel.md)
+    * [for 和 select 和 channel 的结合](theory/07-for-and-select.md)
 * [Part II：实例解析](practice/README.md)
     * [go syncMap 是如何实现并发访问的](practice/01-go-syncmap.md)
 * [part III：内部原理](internal/README.md)
