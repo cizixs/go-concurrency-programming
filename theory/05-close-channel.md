@@ -38,8 +38,9 @@ panic: close of closed channel
 panic: send on closed channel
 ```
 
-但是从已经关闭的 channel 中是可以读取数据的，它会返回 channel 中传输数据类型的默认值，比如如果 channel 中传输的数据类型为 int，
-那么则会一直返回 0。
+但是从已经关闭的 channel 中是可以读取数据的，如果 channel 中还有数据（后面介绍有缓存 channel 的时候会更容易理解），
+可以继续从里面读取数据。如果 channel 中没有写入的数据了，它会返回传输数据类型的默认值，
+比如如果 channel 中传输的数据类型为 int，则会一直返回 0。
 
 **NOTE:** go 语言中各种类型的默认值请参考相关数据或者文档。
 
