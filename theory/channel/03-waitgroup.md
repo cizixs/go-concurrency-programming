@@ -107,7 +107,7 @@ func main() {
 
 程序的运行示意图如下：
 
-![](../_images/hello-goroutine.jpg)
+![](../../_images/hello-goroutine.jpg)
 
 可以看到，原来的 worker 函数完全不需要任何改动，这是比较推荐的做法，你会在很多 go 语言的代码库中看到类似的用法。
 
