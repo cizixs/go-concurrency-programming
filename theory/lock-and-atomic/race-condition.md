@@ -154,6 +154,6 @@ a.amount = a.amount + amount
 
 ### 3. 运行多个 goroutine 读写变量，但每次只有一个 goroutine 能操作
 
-最后一种解决方案比较是这样的，既然数据竞争是因为多个 goroutine 交替执行关键指令导致的，那只要某个 goroutine 执行指令不中断，也就不会出现问题了。比如上面银行账户的问题，如果每个 goroutine 都是执行完 load、add、save 操作才发生调度，结果也不会出现混乱。
+最后一种解决方案是这样的，既然数据竞争是因为多个 goroutine 交替执行关键指令导致的，那只要某个 goroutine 执行指令不中断，也就不会出现问题了。比如上面银行账户的问题，如果每个 goroutine 都是执行完 load、add、save 操作才发生调度，结果也不会出现混乱。
 
 这就是我们接下来要讲的锁机制，对某些操作（多个指令）加锁，只有某个 goroutine 执行完加锁的内容，才运行其他 goroutine 运行。
