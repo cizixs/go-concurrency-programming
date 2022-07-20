@@ -29,7 +29,7 @@ func worker(name string, wg *sync.WaitGroup) {
 }
 
 func main() {
-	wg ：= sync.WaitGroup{}
+	wg := sync.WaitGroup{}
 
 	wg.Add(2)
 	go worker("hello", &wg)
@@ -88,7 +88,7 @@ func worker(name string) {
 }
 
 func main() {
-    var wg = sync.WaitGroup
+    var wg = sync.WaitGroup{}
 
     wg.Add(2)
     go func() {
